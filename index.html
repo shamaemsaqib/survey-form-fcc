@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email" id="email-label">Email </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+        required
+      />
+
+      <label for="age" id="number-label">Age<span>(optional)</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="13"
+        max="120"
+        placeholder="Enter your Age"
+      />
+
+      <label for="role"> Which option best describes your current role?</label>
+      <select name="role" id="dropdown">
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full time Job</option>
+        <option value="3">Full time Learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
+      </select>
+
+      <fieldset id="recommend">
+        <label> Would you recommend freeCodeCamp to a friend? </label>
+
+        <div class="option-wrapper">
+          <input
+            type="radio"
+            name="recommendation"
+            id="r1"
+            value="Definately"
+          />
+          <label for="r1"> Definately</label>
+        </div>
+        <div class="option-wrapper">
+          <input type="radio" name="recommendation" id="r2" value="Maybe" />
+          <label for="r2"> Maybe</label>
+        </div>
+        <div class="option-wrapper">
+          <input type="radio" name="recommendation" id="r3" value="Not Sure" />
+          <label for="r3"> Not Sure</label>
+        </div>
+      </fieldset>
+
+      <label for="favourite-feature">
+        What is your favorite feature of freeCodeCamp?
+      </label>
+      <select name="favourite-feature" id="">
+        <option value="">Select an option</option>
+        <option value="1">Challenges</option>
+        <option value="2">Product</option>
+        <option value="3">Community</option>
+        <option value="4">Open Source</option>
+      </select>
+
+      <fieldset id="improve">
+        <label>
+          What would you like to see improved? (Check all that apply)
+        </label>
+
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve1"
+            value="Front-end Projects"
+          />
+          <label for="improve1">Front-end Projects</label>
+        </div>
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve2"
+            value="Back-end Projects"
+          />
+          <label for="improve2">Back-end Projects</label>
+        </div>
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve3"
+            value="Data Visualization"
+          />
+          <label for="improve3">Data Visualization</label>
+        </div>
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve4"
+            value="Challenges"
+          />
+          <label for="improve4">Challenges</label>
+        </div>
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve5"
+            value="Open Source Community"
+          />
+          <label for="improve5">Open Source Community</label>
+        </div>
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve6"
+            value="Gitter help rooms"
+          />
+          <label for="improve6">Gitter help rooms</label>
+        </div>
+        <div class="option-wrapper">
+          <input type="checkbox" name="improve" id="improve7" value="Videos" />
+          <label for="improve7">Videos</label>
+        </div>
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve8"
+            value="City Meetups"
+          />
+          <label for="improve8">City Meetups</label>
+        </div>
+        <div class="option-wrapper">
+          <input type="checkbox" name="improve" id="improve9" value="Wiki" />
+          <label for="improve9">Wiki</label>
+        </div>
+        <div class="option-wrapper">
+          <input type="checkbox" name="improve" id="improve10" value="Forum" />
+          <label for="improve10">Forum</label>
+        </div>
+        <div class="option-wrapper">
+          <input
+            type="checkbox"
+            name="improve"
+            id="improve11"
+            value="Additional Courses"
+          />
+          <label for="improve11">Additional Courses</label>
+        </div>
+      </fieldset>
+
+      <label for="suggestions"> Any comments or suggestions? </label>
+      <textarea
+        name="suggestions"
+        id=""
+        cols=""
+        rows="5"
+        placeholder="Enter your comment here..."
+      ></textarea>
+
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>

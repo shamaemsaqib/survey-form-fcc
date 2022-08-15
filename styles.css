@@ -1,0 +1,146 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  z-index: 0;
+  line-height: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+header {
+  margin: 1rem auto;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#title {
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+#description {
+  font-style: italic;
+}
+
+#survey-form {
+  background-color: rgba(27, 27, 50, 0.8);
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+}
+
+input,
+label,
+select {
+  display: block;
+  width: 100%;
+  height: 2.3rem;
+}
+
+input,
+select {
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0.2rem 1rem;
+  border: transparent;
+}
+
+label {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.6);
+  width: unset;
+  display: unset;
+  font-size: unset;
+  border-radius: unset;
+}
+
+label span {
+  font-size: 0.9rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+#recommend {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.option-wrapper label {
+  margin-top: 0;
+}
+
+textarea {
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0.5rem;
+  border: transparent;
+  width: 100%;
+}
+
+#submit {
+  height: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #37af65;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #fff;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
